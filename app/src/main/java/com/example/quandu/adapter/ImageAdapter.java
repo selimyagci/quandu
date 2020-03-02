@@ -1,7 +1,6 @@
 package com.example.quandu.adapter;
 
 import android.content.Context;
-import android.net.Uri;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;

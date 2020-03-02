@@ -55,13 +55,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     public void onBindViewHolder(CustomViewHolder holder, final int position) {
         holder.txtTitle.setText(dataList.getMerchants().get(position).getName());
 
-        //Picasso.Builder builder = new Picasso.Builder(context);
-        //builder.downloader(new OkHttp3Downloader(context));
         Restaurant.Ima im = dataList.getMerchants().get(position).getImages().get(0);
-        //builder.build().load(im.getUrl())
-        //        .placeholder((R.drawable.ic_launcher_background))
-        //        .error(R.drawable.ic_launcher_foreground)
-        //        .into(holder.coverImage);
 
         Picasso.get()
                 .load(im.getUrl())
